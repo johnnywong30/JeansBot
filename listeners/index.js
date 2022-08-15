@@ -5,12 +5,12 @@ const listeners = [
 ]
 
 const loadListeners = async app => {
-    listeners.forEach( listener => {
-        const [ message, response ] = listener
-        app.message( message, response )
+    listeners.forEach(listener => {
+        const [message, response] = listener
+        app.message(message, response)
     })
 }
 
-module.exports = { 
-    loadListeners 
+module.exports = {
+    loadListeners
 }
