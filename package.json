@@ -1,0 +1,28 @@
+{
+  "name": "jeansbot",
+  "version": "1.0.0",
+  "description": "Automating Jeans's intelligence into Slack",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnywong30/JeansBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnnywong30/JeansBot/issues"
+  },
+  "homepage": "https://github.com/johnnywong30/JeansBot#readme",
+  "dependencies": {
+    "@slack/bolt": "^3.12.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
