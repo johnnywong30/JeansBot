@@ -1,7 +1,7 @@
 const { App } = require('@slack/bolt')
 require('dotenv').config()
 
-const { loadListeners } = require('./listeners')
+const { loadMessageListeners, loadCommandListeners } = require('./listeners')
 
 const PORT = 3000
 
@@ -16,7 +16,8 @@ const app = new App({
 
 (async () => {
 	// Start your app
-	await loadListeners(app)
+	await loadMessageListeners(app)
+	await loadCommandListeners(app)
 	await app.start(process.env.PORT || PORT)
 	console.log(`⚡️ Slack Bolt app is running on port ${PORT}!`)
 })()

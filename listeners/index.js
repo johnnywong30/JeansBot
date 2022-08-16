@@ -1,16 +1,29 @@
 const { listenHello } = require('./hello')
+const { scheduleMeeting } = require('./meetings')
 
-const listeners = [
+const messageListeners = [
     listenHello
 ]
 
-const loadListeners = async app => {
-    listeners.forEach(listener => {
+const commandListeners = [
+    scheduleMeeting
+]
+
+const loadMessageListeners = async app => {
+    messageListeners.forEach(listener => {
         const [message, response] = listener
         app.message(message, response)
     })
 }
 
+const loadCommandListeners = async app => {
+    commandListeners.forEach(listener => {
+        const [command, response] = listener
+        app.command(command, response)
+    })
+}
+
 module.exports = {
-    loadListeners
+    loadMessageListeners,
+    loadCommandListeners
 }

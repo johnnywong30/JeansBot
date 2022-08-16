@@ -4,6 +4,7 @@
   "description": "Automating Jeans's intelligence into Slack",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +20,9 @@
   },
   "homepage": "https://github.com/johnnywong30/JeansBot#readme",
   "dependencies": {
-    "@slack/bolt": "^3.12.1"
+    "@slack/bolt": "^3.12.1",
+    "axios": "^0.27.2",
+    "express": "^4.18.1"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
@@ -29,5 +32,8 @@
     "eslint-plugin-import": "^2.25.2",
     "nodemon": "^2.0.19",
     "prettier": "^2.5.1"
+  },
+  "engines": {
+    "node": "16.14.0"
   }
 }
