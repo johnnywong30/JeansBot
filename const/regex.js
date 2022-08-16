@@ -1,4 +1,4 @@
-const helloRegex = /^(hi|hello|hey|sup|Hi|Hello|Hey|Sup).*/
+const helloRegex = /^(hi|hello|hey|yo|sup|Hi|Hello|Hey|Sup|Yo).*/
 
 module.exports = {
     helloRegex
