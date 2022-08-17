@@ -1,4 +1,4 @@
-const { helloRegex } = require('../const/regex')
+const { helloRegex } = require('../../const/regex')
 
 const listenHello = [
     helloRegex,
